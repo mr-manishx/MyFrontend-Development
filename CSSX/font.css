@@ -1,0 +1,13 @@
+h1{
+    font-style: inherit;
+    background-color: cyan;
+    font-size: 60px;
+    line-height: 100%;
+}
+p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: yellow;
+    background: #000;
+    font-size: medium;
+    font-style: oblique;
+}

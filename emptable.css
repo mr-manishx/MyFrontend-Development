@@ -1,0 +1,23 @@
+table{
+    width: 100%;
+}
+table, th, td{
+    border: 2px solid green;
+    border-collapse: collapse;
+    /* border-radius: 10px; */
+}
+td{
+    text-align: center;
+    background-color: pink;
+}
+th{
+    color: brown;
+    background-color: blue;
+}
+#sal{
+    color: green;
+    background: #000;
+}
+#eng{
+    height: 200px;
+}

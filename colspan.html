@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            border: 2px dotted crimson;
+            width: 80%;
+            border-collapse: collapse; /* Moved here */
+        }
+
+        th, td {
+            border: 2px solid gray;
+            padding: 8px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th colspan="2">Company Name</th>
+                <th>Location</th>
+                <th>Employees</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Wipro</td> 
+                <td>IT</td>
+                <td rowspan="2">Bangalore</td>
+                <td>1000</td>
+            </tr>
+            <tr>
+                <td>Google</td>
+                <td>Software</td>
+                <!-- <td>USA</td> -->
+                <td>5000</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

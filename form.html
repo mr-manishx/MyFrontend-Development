@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <form action="#">
+        <legend>Registration Form</legend>
+      
+        <label for="fname"> First Name:</label>
+        <input type="text" id="fname" name="fname" placeholder="Enter your first name" required autofocus>
+      
+        <label for="lname">Last Name:</label>
+        <input type="text" id="lname" name="lname" placeholder="Enter your last name" required>
+      
+        <label for="mobile">Mobile:</label>
+        <input type="tel" id="mobile" name="mobile" placeholder="10-digit number" maxlength="10" required>
+      
+        <label>Gender:</label>
+        <div class="gender"> 
+          <input type="radio" id="male" name="gender" value="Male" required>
+          <label for="male" style="display:inline;">Male</label>
+          <input type="radio" id="female" name="gender" value="Female" required>
+          <label for="female" style="display:inline;">Female</label>
+        </div>
+      
+        <label>Languages Known:</label>
+        <div class="language">
+          <input type="checkbox" id="hindi" name="language" value="Hindi">
+          <label for="hindi" style="display:inline;">Hindi</label>
+          <input type="checkbox" id="english" name="language" value="English">
+          <label for="english" style="display:inline;">English</label>
+        </div>
+      
+        <input type="submit" value="Register">
+      </form>
+      
+</body>
+</html>
