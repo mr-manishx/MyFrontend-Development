@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        #navbar {
+            height: 60px;
+            background-color: black;
+            display: flex;
+            align-items: center; /* vertically center */
+            justify-content: center; /* horizontally center */
+            gap: 50px; /* space between items */
+        }
+        a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        input[type="search"] {
+            padding: 5px;
+        }
+        button {
+            padding: 5px 10px;
+        }
+        span{
+            color: yellow;
+            font-weight: 800;
+        }
+    </style>
+    
+</head>
+<body>
+    
+    <div id="navbar">
+
+        <a id="logo" href="#">amazon.<span>in</span></a>
+        <a href="">Account</a>
+        <a href="">My<span>Cart</span></a>
+        <a href="">Contact us</a>
+
+        <input type="search" placeholder="search amazon.in">
+        <button>Search</button>
+    </div>
+</body>
+</html>
