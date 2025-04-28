@@ -1,0 +1,13 @@
+body{
+    background-color: pink;
+    background-size: auto;
+}
+
+.heading{
+    color: red;
+    background-color: aqua;
+    border: 2px solid black;
+    /* font-size: larger; */
+    font-weight: 600;
+    font-style: oblique;
+}
