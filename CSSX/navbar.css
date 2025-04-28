@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: #00040a;
+}
+
+nav {
+    background-color: #19191e;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.logo {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+ul li {
+    position: relative;
+}
+
+ul li a:hover {
+    color: #131d44;
+}
+
+.button {
+    background-color: rgb(109, 128, 225);
+    color: #e2e1ed;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #c7d2fe;
+    color: #1e3a8a;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgb(8, 2, 23);
+    padding: 0.5rem 0;
+    min-width: 180px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    z-index: 10;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.dropdown a {
+    color: #4f46e5;
+    padding: 0.5rem 1rem;
+    display: block;
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dropdown a:hover {
+    background-color: #c7d2fe;
+    color: #2b2e35;
+}
+
+.dropdown.active {
+    display: block;
+}
+
+@media (max-width: 768px) {
+    ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        background-color: #19191e;
+        width: 100%;
+        padding: 1rem 2rem;
+        gap: 1rem;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    
+    ul li {
+        position: relative;
+        width: 100%;
+    }
+    
+    .menu-toggle {
+        display: block;
+        cursor: pointer;
+    }
+    
+    .menu-active {
+        display: flex;
+    }
+}
+
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: white;
+    background: none;
+    border: none;
+}
+
+.menu-toggle.active {
+    color: #4f46e5;
+}

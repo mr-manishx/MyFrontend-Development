@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Navbar with Dropdown</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #f0f2f5;
+    }
+    .navbar {
+      display: flex;
+      background-color: #4a90e2;
+      padding: 1rem 2rem;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      margin: 0 1rem;
+      position: relative;
+      font-size: 1.1rem;
+    }
+    .navbar a:hover {
+      color: #ffe082;
+    }
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: white;
+      min-width: 150px;
+      box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+      z-index: 1;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    .dropdown-content a {
+      color: #333;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+    .dropdown-content a:hover {
+      background-color: #f1f1f1;
+    }
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+<div class="navbar">
+  <div class="logo">
+    <a href="#">MyBrand</a>
+  </div>
+  <div class="nav-links">
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <div class="dropdown">
+      <a href="#">Services ▼</a>
+      <div class="dropdown-content">
+        <a href="#">Web Development</a>
+        <a href="#">App Development</a>
+        <a href="#">Graphic Design</a>
+      </div>
+    </div>
+    <a href="#">Contact</a>
+  </div>
+</div>
+
+</body>
+</html>
