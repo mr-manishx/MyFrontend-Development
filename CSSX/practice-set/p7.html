@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #navbar {
+            height: 60px;
+            background-color: black;
+            display: flex;
+            align-items: center; /* vertically center */
+            justify-content: center; /* horizontally center */
+            gap: 50px; /* space between items */
+        }
+        a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        input[type="search"] {
+            padding: 5px;
+        }
+        button {
+            padding: 5px 10px;
+        }
+        span{
+            color: yellow;
+            font-weight: 800;
+        }
+        #first-div{
+            width: 100px;
+            height: 100px;
+            background-color: rgba(223, 0, 0, 0.4);
+            border: 2px solid green;
+            /* display: inline-block; */
+            
+        }
+        #second-div{
+            width: 100px;
+            height: 100px;
+            background-color: rgba(0, 225, 0, 0.6);
+            border: 2px solid green;
+           
+        }
+        #third-div{
+            width: 100px;
+            height: 100px;
+            background-color: rgba(0, 0, 225, 0.2);
+            border: 2px solid green;
+        }
+        body{
+            background-color: rgba(red, green, blue, alpha);
+        }
+        div{
+            margin: 2px;
+            padding: 2px;
+        }
+        footer{
+            width: 100%;
+            background-color: black;
+            color: white;
+            text-align: center;
+            margin-top: 23%;
+        }
+    </style>
+</head>
+<body>
+
+    <header id="navbar">
+        <a id="logo" href="#">amazon.<span>in</span></a>
+        <a href="">Account</a>
+        <a href="">My<span>Cart</span></a>
+        <a href="">Contact us</a>
+
+        <input type="search" placeholder="search amazon.in">
+        <button>Search</button>
+    </header>
+
+    <div id="first-div">Hello</div>
+    <div id="second-div"></div>
+    <div id="third-div"></div>
+
+    <footer>
+        Made with <span>&#9829;</span> by <i>SafSafai</i><br>
+        &#169; Copyright 1999-2025 by Refsnes Data
+    </footer>
+    
+</body>
+</html>
